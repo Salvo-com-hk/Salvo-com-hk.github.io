@@ -1,5 +1,7 @@
 body {
   margin-top: 0px;
+  background-image: linear-gradient(to right, #FFF, #DDF);
+  color: black;
 }
 table.menu {
   width: 70em;
