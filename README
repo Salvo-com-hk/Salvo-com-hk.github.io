@@ -1,0 +1,7 @@
+Static web-site for salvo.com.hk
+
+b/c of security restrictions around loading local files in a browser, you can't directly use this with file:// urls.
+Instead, run: ./testServer.sh
+which starts a little mini-server using python for you
+(python3 -m http.server 9797)
+
