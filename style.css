@@ -1,6 +1,6 @@
 body {
   margin-top: 0px;
-  background-image: linear-gradient(to right, #FFF, #DDF);
+  background-image: linear-gradient(to right, #FFF, #EEF);
   color: black;
 }
 table.menu {
@@ -12,6 +12,7 @@ table.menu td {
   background-color: #FFFFFF; 
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
 }
 table.main {
   margin-left: auto;
@@ -33,3 +34,27 @@ img.left_logo {
   margin-left: auto;
   margin-right: auto;
 }
+span.visually-hidden {
+  display: none;
+}
+
+table.team td.experience div::first-line {
+  color: #600;
+  font-weight: bold;
+  text-decoration: underline;
+}
+table.team td.experience div {
+  white-space: pre;
+  border-left: 1px solid black;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+table.team td.experience {
+  text-align: left;
+}
+table.team {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+  
