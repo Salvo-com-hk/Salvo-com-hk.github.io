@@ -33,7 +33,7 @@ function includeBody() {
   if (filename == "index" || filename == "") {
     filename = "about";
   }
-  if (filename == "about" || filename == "trading" || filename == "backtest" || filename == "optimization") {
+  if (filename == "about" || filename == "trading" || filename == "backtesting" || filename == "optimization") {
     window.document.write("<div w3-include-html=\"");
     window.document.write(filename);
     window.document.write("-body.html\"></div>");
