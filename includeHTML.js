@@ -25,3 +25,20 @@ function includeHTML() {
     }
   }
 }
+
+function includeBody() {
+  var url = window.location.pathname;
+  filename = url.substring(url.lastIndexOf('/')+1); 
+  filename = filename.substring(0,filename.lastIndexOf('.'));
+  if (filename == "index" || filename == "") {
+    filename = "about";
+  }
+  if (filename == "about" || filename == "trading" || filename == "backtest" || filename == "optimization") {
+    window.document.write("<div w3-include-html=\"");
+    window.document.write(filename);
+    window.document.write("-body.html\"></div>");
+  } else {
+    window.document.write("<xmp>Attempt to pass custom value to includeBody() in includeHTML.js. For security purposes, this is not allowed.</xmp>");
+  }
+}
+
