@@ -1,6 +1,20 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="includeHTML.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-Salvo.com.hk website is under construction.
-Please write the 'sales' email address at salvo.com.hk for more information.
+<div w3-include-html="menu.html"></div>
+<table class="main"><tr><td><div w3-include-html="left.html"></div></td><td>
+<div w3-include-html="about.html"></div>
+</td></tr></table>
+
+<br>
+<br>
+<hr>
+&copy; 2023 by Salvo Limited Hong Kong. All rights reserved.
 </body>
+<script>
+includeHTML();
+</script>
 </html>

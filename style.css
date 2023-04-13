@@ -1,0 +1,30 @@
+table.menu {
+  width: 70em;
+}
+table.menu td {
+  border: 1px solid #000000;
+  padding: 5px;
+  background-color: #FFFFFF; 
+  text-align: center;
+  text-transform: uppercase;
+}
+table.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+table.main td {
+   vertical-align: top;
+}
+table.left th {
+   text-align: right;  
+   vertical-align: top;
+   text-decoration: underline;
+}
+table.left td {
+  vertical-align:top;
+}
+img.left_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
