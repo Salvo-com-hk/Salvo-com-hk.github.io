@@ -1,7 +1,8 @@
 body {
   margin-top: 0px;
-  background-image: linear-gradient(to right, #FFF, #EEF);
+  /*background-image: linear-gradient(to right, #FFF, #EEF);*/
   color: black;
+  font-family: 'Libre Franklin';
 }
 table.menu {
   width: 70em;
@@ -57,4 +58,10 @@ table.team {
   margin-right: auto;
   text-align: center;
 }
-  
+td#leftContainer {
+  width: 20em;
+}
+td#rightContainer {
+  width: 50em;
+}
+.circular--square { border-radius: 50%; }
