@@ -37,6 +37,7 @@ function includeHTML() {
         }
       }
       xhttp.open("GET", file, true);
+      xhttp.setRequestHeader("Cache-Control", "must-revalidate");
       xhttp.send();
       /* Exit the function: */
       return;
