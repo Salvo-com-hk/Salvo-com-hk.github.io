@@ -45,25 +45,25 @@ img.left_logo {
 span.visually-hidden {
   display: none;
 }
-table.team td.experience div.TeamMemberName {
+table.leadership td.experience div.TeamMemberName {
   font-weight: bold;
 }
 
-table.team td.experience div:not(.TeamMemberName)::first-line {
+table.leadership td.experience div:not(.TeamMemberName)::first-line {
   color: #600;
   font-weight: bold;
   text-decoration: underline;
 }
-table.team td.experience div {
+table.leadership td.experience div {
   white-space: pre;
   border-left: 1px solid black;
   padding-left: 1em;
   padding-top: 1em;
 }
-table.team td.experience {
+table.leadership td.experience {
   text-align: left;
 }
-table.team {
+table.leadership {
   margin-left: auto;
   margin-right: auto;
   text-align: center;

@@ -52,7 +52,7 @@ function includeBody() {
   if (tabname == "index" || tabname == "") {
     tabname = "about";
   }
-  if (tabname == "about" || tabname == "trading" || tabname == "backtesting" || tabname == "optimization" || tabname == "team") {
+  if (tabname == "about" || tabname == "trading" || tabname == "backtesting" || tabname == "optimization" || tabname == "leadership") {
     window.document.write("<div w3-include-html=\"");
     window.document.write(tabname);
     window.document.write("-body.html\"></div>");
