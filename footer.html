@@ -1,4 +1,12 @@
 <br>
 <br>
-<hr>
-&copy; 2023 by Salvo Limited Hong Kong. All rights reserved.
+<div id="footerSpacer"></div><script>
+var h = window.innerHeight;
+var footerSpacer = document.getElementById('footerSpacer');
+var offsets = footerSpacer.getBoundingClientRect();
+var topOffset = offsets.top;
+if (topOffset + 16 < h) {
+  diff = h - (topOffset + 16);
+  footerSpacer.setAttribute("style","height:" + diff + "px");
+}
+</script><div class="footerText">&copy; 2023 by Salvo Limited Hong Kong. All rights reserved.</div>
