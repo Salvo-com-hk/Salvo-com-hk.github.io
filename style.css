@@ -8,12 +8,16 @@ table.menu {
   width: 70em;
 }
 table.menu td {
-  border: 1px solid #000000;
-  padding: 5px;
-  background-color: #FFFFFF; 
+  padding: 0px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  border-left: 1px inset #DDD;
+  border-bottom: 1px inset #DDD;
+  background-color: #FFF;
+}
+table.menu td a {
+  color: black;
 }
 table.main {
   margin-left: auto;
@@ -65,3 +69,5 @@ td#rightContainer {
   width: 40em;
 }
 .circular--square { border-radius: 50%; }
+
+

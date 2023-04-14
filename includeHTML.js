@@ -47,15 +47,16 @@ function includeHTML() {
 
 function includeBody() {
   var url = window.location.pathname;
-  filename = url.substring(url.lastIndexOf('/')+1); 
-  filename = filename.substring(0,filename.lastIndexOf('.'));
-  if (filename == "index" || filename == "") {
-    filename = "about";
+  tabname = url.substring(url.lastIndexOf('/')+1); 
+  tabname = tabname.substring(0,tabname.lastIndexOf('.'));
+  if (tabname == "index" || tabname == "") {
+    tabname = "about";
   }
-  if (filename == "about" || filename == "trading" || filename == "backtesting" || filename == "optimization" || filename == "team") {
+  if (tabname == "about" || tabname == "trading" || tabname == "backtesting" || tabname == "optimization" || tabname == "team") {
     window.document.write("<div w3-include-html=\"");
-    window.document.write(filename);
+    window.document.write(tabname);
     window.document.write("-body.html\"></div>");
+    window.document.write("<style>table.menu td." + tabname + "Tab { border-left: 1px outset #DDD; border-bottom: 1px outset #DDD; background-color: #DDF; } </style>");
   } else {
     window.document.write("<xmp>Attempt to pass custom value to includeBody() in includeHTML.js. For security purposes, this is not allowed.</xmp>");
   }
