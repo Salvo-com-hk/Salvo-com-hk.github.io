@@ -7,10 +7,12 @@
 <script>
 // just a silly little thing so that the email address isn't just sitting there in plain text for spam bots
 e=document.getElementById("emailGoesHere");
-function rot13(message) {
-  return message.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)));
-} 
-e.innerHTML=rot13("fnyrf.fnyib.pbz.ux");
+if (e) {
+  function rot13(message) {
+    return message.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)));
+  } 
+  e.innerHTML=rot13("fnyrf@fnyib.pbz.ux");
+}
 </script>
 <tr><th>Address:</th><td>Salvo Limited Beverly House, 2F<br>93-107 Lockhart Rd,<br>Wan Chai Hong Kong</td></tr>
 </table>

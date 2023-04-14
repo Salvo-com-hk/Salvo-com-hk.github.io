@@ -26,6 +26,9 @@ table.main {
 table.main td {
    vertical-align: top;
 }
+table.left td, table.left th {
+  padding-top: 0.6em;
+}
 table.left th {
    text-align: right;  
    vertical-align: top;
@@ -42,8 +45,11 @@ img.left_logo {
 span.visually-hidden {
   display: none;
 }
+table.team td.experience div.TeamMemberName {
+  font-weight: bold;
+}
 
-table.team td.experience div::first-line {
+table.team td.experience div:not(.TeamMemberName)::first-line {
   color: #600;
   font-weight: bold;
   text-decoration: underline;
@@ -63,11 +69,12 @@ table.team {
   text-align: center;
 }
 td#leftContainer {
-  width: 20em;
+  width: 30em;
 }
 td#rightContainer {
   width: 40em;
 }
 .circular--square { border-radius: 50%; }
+
 
 
