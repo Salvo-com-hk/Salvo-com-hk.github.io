@@ -36,6 +36,16 @@ table.left th {
 }
 table.left td {
   vertical-align:top;
+  padding-left: 0.5em;
+}
+table.left td.map {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+}
+table.left td.map iframe.map {
+  border: 1px solid #CCC;
 }
 img.left_logo {
   display: block;
