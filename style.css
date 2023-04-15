@@ -38,6 +38,12 @@ table.left td {
   vertical-align:top;
   padding-left: 0.5em;
 }
+table.left td.logo {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+}
 table.left td.map {
   text-align: center;
   margin-left: auto;
@@ -91,6 +97,10 @@ div.footerText {
   margin-right: auto;
   font: 10px 'Libre Franklin';
   text-align: right;
+}
+img.left_logo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
